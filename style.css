@@ -1,0 +1,928 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    color:#222;
+}
+
+/* ===========================
+NAVBAR
+=========================== */
+
+.navbar{
+    padding:18px 0;
+}
+
+.navbar-brand{
+    font-size:30px;
+    font-weight:700;
+}
+
+.nav-link{
+    margin:0 10px;
+    font-weight:500;
+    color:#444 !important;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#198754 !important;
+}
+
+.btn{
+    border-radius:50px;
+    transition:.4s;
+}
+
+.btn-success:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(25,135,84,.25);
+}
+
+/* ===========================
+HERO
+=========================== */
+
+.hero{
+
+    background:linear-gradient(135deg,#eef8ff,#ffffff);
+
+    padding:90px 0;
+
+    overflow:hidden;
+}
+
+.hero h1{
+
+    font-size:65px;
+
+    line-height:1.2;
+
+}
+
+.hero p{
+
+    color:#666;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.hero-image{
+
+    position:relative;
+
+}
+
+.hero-image img{
+
+    border-radius:25px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+    transition:.5s;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.floating-card{
+
+    position:absolute;
+
+    left:-20px;
+
+    bottom:25px;
+
+    background:#fff;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+    animation:float 3s infinite;
+
+}
+
+.floating-card h5{
+
+    margin-bottom:5px;
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* ===========================
+ABOUT
+=========================== */
+
+#about{
+
+    padding:100px 0;
+
+}
+
+#about img{
+
+    transition:.5s;
+
+}
+
+#about img:hover{
+
+    transform:scale(1.03);
+
+}
+
+#about h2{
+
+    font-size:45px;
+
+}
+
+#about p{
+
+    color:#666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================
+SECTION TITLE
+=========================== */
+
+section h2{
+
+    font-weight:700;
+
+}
+
+section p{
+
+    color:#666;
+
+}
+
+/* ===========================
+PLACES
+=========================== */
+
+.place-card{
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+.place-card img{
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.place-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+
+.card-body{
+
+    padding:25px;
+
+}
+
+.card-body h4{
+
+    font-weight:700;
+
+}
+
+/* ===========================
+CULTURE
+=========================== */
+
+#culture{
+
+    padding:100px 0;
+
+}
+
+.culture-img img{
+
+    border-radius:20px;
+
+    transition:.5s;
+
+}
+
+.culture-img img:hover{
+
+    transform:scale(1.04);
+
+}
+
+.culture-list{
+
+    list-style:none;
+
+    padding-left:0;
+
+}
+
+.culture-list li{
+
+    margin-bottom:15px;
+
+    font-size:18px;
+
+}
+
+.culture-list i{
+
+    color:#198754;
+
+    margin-right:10px;
+
+}
+
+/* ===========================
+COUNTER
+=========================== */
+
+.counter{
+
+    background:#198754;
+
+    color:#fff;
+
+    padding:80px 0;
+
+}
+
+.counter h2{
+
+    font-size:50px;
+
+    font-weight:700;
+
+}
+
+.counter p{
+
+    color:#fff;
+
+}
+
+/* ===========================
+GALLERY
+=========================== */
+
+#gallery{
+
+    padding:100px 0;
+
+}
+
+.gallery-item{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.1);
+
+}
+
+/* ===========================
+TESTIMONIAL
+=========================== */
+
+.testimonial{
+
+    background:#f8f9fa;
+
+    padding:90px 0;
+
+}
+
+.testimonial-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ===========================
+CONTACT
+=========================== */
+
+#contact{
+
+    padding:100px 0;
+
+}
+
+.form-control{
+
+    border-radius:12px;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+}
+
+.form-control:focus{
+
+    box-shadow:none;
+
+    border-color:#198754;
+
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer{
+
+    background:#111;
+
+    color:#fff;
+
+    padding:60px 0 20px;
+
+}
+
+footer h4{
+
+    margin-bottom:20px;
+
+}
+
+footer a{
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    display:block;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+footer a:hover{
+
+    color:#28a745;
+
+}
+
+.social a{
+
+    display:inline-block;
+
+    width:45px;
+
+    height:45px;
+
+    line-height:45px;
+
+    text-align:center;
+
+    background:#222;
+
+    border-radius:50%;
+
+    margin-right:10px;
+
+    transition:.4s;
+
+}
+
+.social a:hover{
+
+    background:#198754;
+
+    transform:translateY(-5px);
+
+}
+
+footer hr{
+
+    border-color:#333;
+
+}
+
+/* ===========================
+ANIMATION
+=========================== */
+
+.place-card,
+.gallery-item,
+.testimonial-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+.hero-image{
+
+margin-top:50px;
+
+}
+
+.floating-card{
+
+position:relative;
+
+left:0;
+
+bottom:0;
+
+margin:20px auto 0;
+
+width:260px;
+
+}
+
+#about{
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:60px 0;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.counter h2{
+
+font-size:35px;
+
+}
+
+}
+
+/* =========================================
+   HERO RESPONSIVE FIX
+========================================= */
+
+/* Desktop */
+.hero {
+    background: linear-gradient(135deg, #eef8ff, #ffffff);
+    padding: 90px 0;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.2;
+}
+
+.hero p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 25px 60px rgba(0,0,0,.15);
+    transition: .5s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.03);
+}
+
+.floating-card {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.15);
+    animation: float 3s infinite;
+}
+
+.floating-card h5 {
+    margin-bottom: 5px;
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .hero-image {
+        margin-top: 50px;
+    }
+
+    .hero-image img {
+        max-width: 500px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .hero {
+        padding: 35px 0 60px;
+    }
+
+
+    /* Space between navbar and badge */
+
+    .hero .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+
+        margin-top: 10px;
+        margin-bottom: 22px;
+
+        padding: 10px 15px !important;
+
+        font-size: 11px;
+    }
+
+
+    /* Heading */
+
+    .hero h1 {
+        font-size: 34px !important;
+        line-height: 1.25 !important;
+
+        margin-top: 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+
+    /* Description */
+
+    .hero p {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+
+        margin-top: 0 !important;
+        margin-bottom: 25px !important;
+    }
+
+
+    /* =====================================
+       BUTTON FIX
+    ===================================== */
+
+    .hero .mt-4 {
+        margin-top: 20px !important;
+    }
+
+    .hero .mt-4 .btn {
+        display: block;
+
+        width: 100%;
+
+        margin: 0 0 12px 0 !important;
+
+        padding: 11px 15px !important;
+
+        font-size: 15px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* Remove Bootstrap ms-2 on mobile */
+
+    .hero .ms-2 {
+        margin-left: 0 !important;
+    }
+
+
+    /* =====================================
+       STATISTICS
+    ===================================== */
+
+    .hero .row.mt-5 {
+        margin-top: 35px !important;
+    }
+
+    .hero .row.mt-5 .col-4 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .hero .row.mt-5 h2 {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    .hero .row.mt-5 p {
+        font-size: 10px !important;
+        line-height: 1.4 !important;
+        margin: 0;
+    }
+
+
+    /* =====================================
+       HERO IMAGE
+    ===================================== */
+
+    .hero-image {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 100%;
+        height: 250px;
+
+        object-fit: cover;
+
+        border-radius: 22px !important;
+    }
+
+
+    /* =====================================
+       FLOATING CARD
+    ===================================== */
+
+    .floating-card {
+        position: relative;
+
+        left: auto;
+        bottom: auto;
+
+        width: 90%;
+
+        margin: 15px auto 0;
+
+        padding: 14px 16px;
+
+        text-align: left;
+    }
+
+    .floating-card h5 {
+        font-size: 15px;
+    }
+
+    .floating-card p {
+        font-size: 11px !important;
+        margin: 0;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding-top: 30px;
+    }
+
+
+    .hero .badge {
+        margin-top: 5px;
+        margin-bottom: 24px;
+    }
+
+
+    .hero h1 {
+        font-size: 30px !important;
+        line-height: 1.25 !important;
+    }
+
+
+    .hero p {
+        font-size: 13px !important;
+    }
+
+
+    .hero .mt-4 .btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 12px !important;
+    }
+
+
+    .hero-image img {
+        height: 210px;
+    }
+
+
+    .hero .row.mt-5 h2 {
+        font-size: 19px;
+    }
+
+    .hero .row.mt-5 p {
+        font-size: 9px !important;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE LANDSCAPE
+========================================= */
+
+@media (max-width: 991px) and (orientation: landscape) {
+
+    .hero {
+        padding: 40px 0 60px;
+    }
+
+    .hero h1 {
+        font-size: 40px !important;
+    }
+
+    .hero-image {
+        margin-top: 35px;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+
+}   
